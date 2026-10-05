@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر إلكتروني عصري | E-Commerce Store</title>
+    <!-- خط cairo من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ملف CSS الخاص بنا -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الهيدر وشريط التنقل -->
+    <header class="navbar">
+        <div class="logo">
+            <h2>Gym<span>Flex</span></h2>
+        </div>
+        <nav class="nav-links">
+            <a href="#">الرئيسية</a>
+            <a href="#products">المنتجات</a>
+            <a href="#about">عن المتجر</a>
+        </nav>
+        <div class="cart-icon" id="cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- واجهة الصفحة (Hero Section) -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>تشكيلة الملابس الرياضية الأحدث 2026</h1>
+            <p>أفضل الخامات والجودة للرياضيين المحترفين</p>
+            <a href="#products" class="btn-primary">تسوق الآن</a>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section class="products-section" id="products">
+        <h2 class="section-title">أحدث المنتجات</h2>
+        <div class="products-grid" id="products-container">
+            <!-- سيتم إضافة المنتجات هنا ديناميكياً بواسطة JavaScript -->
+        </div>
+    </section>
+
+    <!-- سلة الشراء الجانبية (Cart Sidebar) -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>سلة الشراء</h3>
+            <span class="close-btn" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- عناصر السلة ستظهر هنا -->
+        </div>
+        <div class="cart-footer">
+            <div class="total-price">
+                <span>الإجمالي:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="btn-checkout">إتمام الطلب</button>
+        </div>
+    </div>
+
+    <!-- طبقة شفافة خلف السلة عند فتحها -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ربط ملف JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
